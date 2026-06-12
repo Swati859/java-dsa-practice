@@ -77,7 +77,6 @@ package javabasics;
 }
 */
 
-/*public class BasicJavaProblems {
         public static void main(String[]args){
 
             int peopleInRoom = 4;
@@ -91,5 +90,3 @@ package javabasics;
             System.out.println(peopleInRoom);
         }
     }
- */
-
