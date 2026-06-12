@@ -57,7 +57,7 @@ package javabasics;
 
 // Logical Operators
 
-/*public class OperatorQuestions {
+public class OperatorQuestions {
     public static void main(String[]args){
 
         int a = 5;
@@ -76,4 +76,3 @@ package javabasics;
         System.out.println(t);
     }
 }
- */
