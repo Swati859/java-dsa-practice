@@ -31,11 +31,4 @@ package javabasics;
 }
  */
 
-public class StringProblems{
 
-    public static void main(String[] args) {
-        OopsProblems myCar = new OopsProblems();     // Create a myCar object
-        myCar.fullThrottle();      // Call the fullThrottle() method
-        myCar.speed(200);          // Call the speed() method
-    }
-}
