@@ -82,7 +82,7 @@ package javabasics;
 
 // Constructor Parameters
 
-public class OopsProblems {
+/*public class OopsProblems {
     String modelName ;
     int modelAge ;
 
@@ -95,5 +95,96 @@ public class OopsProblems {
         OopsProblems myObj = new OopsProblems("Swati" , 22);
 
         System.out.println(myObj.modelName + " " + myObj.modelAge);
+    }
+}
+ */
+
+
+// This Keyword
+
+/*public class OopsProblems {
+
+    String collegeName;
+    int collegeYear;
+
+    public OopsProblems(String collegeName){
+        this (collegeName , 2023); // Call the two-parameter constructor to reuse code and set a default year
+    }
+
+    public OopsProblems(String collegeName, int collegeYear){
+        this.collegeName = collegeName; // Use 'this' to assign values to the class variables
+        this.collegeYear = collegeYear;
+    }
+
+    public static void main (String[]args){
+        OopsProblems myObj = new OopsProblems("LNCTU" , 2023);
+
+        System.out.println(myObj.collegeName + " " + myObj.collegeYear);
+    }
+}
+ */
+
+// Java Modifiers
+
+//Protected Modifier
+
+/*public class OopsProblems {
+    protected String fname = "John";
+    protected String lname = "Doe";
+    protected String email = "john@doe.com";
+    protected int age = 24;
+}
+
+class Student extends OopsProblems{
+    private int graduationYear = 2018;
+    public static void main(String[] args) {
+        Student myObj = new Student();
+        System.out.println("Name: " + myObj.fname + " " + myObj.lname);
+        System.out.println("Email: " + myObj.email);
+        System.out.println("Age: " + myObj.age);
+        System.out.println("Graduation Year: " + myObj.graduationYear);
+    }
+}
+ */
+//-----------
+
+// Non-Access Modifier - final keyword
+
+/* final class Dummy{
+    public final void someMethod()
+    {  }
+}
+
+/*class MoreDummy extends Dummy { // Error : Java classes declared as final cannot be extended. Restricting inheritance .
+    public void someMethod() // Error : Methods declared as final cannot be overridden.
+    { }
+}
+ */
+
+/*public class OopsProblems {
+    private final int x ; //final instance member variable
+
+    private final static int y; // final static member variable
+       static
+       {y = 4;}
+    OopsProblems()
+    {x=5;}
+
+    public void fun(){
+           final int k ; // final local variable
+    }
+    public static void main (String[] args){
+           OopsProblems myObj = new OopsProblems();
+    }
+}
+*/
+
+// Wrapper Classes
+
+public class OopsProblems {
+    public static void main(String [] args){
+        Integer a =Integer.valueOf("100");
+
+        System.out.println(a);
     }
 }

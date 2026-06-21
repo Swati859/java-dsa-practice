@@ -31,4 +31,6 @@ package javabasics;
 }
  */
 
+public class StringProblems {
 
+}
