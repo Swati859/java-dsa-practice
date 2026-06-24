@@ -181,10 +181,134 @@ class Student extends OopsProblems{
 
 // Wrapper Classes
 
-public class OopsProblems {
+/*public class OopsProblems {
     public static void main(String [] args){
-        Integer a =Integer.valueOf("100");
 
-        System.out.println(a);
+        //1. valueOf() : Converts a primitive or String into a wrapper object
+        Integer num = Integer.valueOf("100");
+        System.out.println(num);
+
+        //2. parseXxx() : Converts String to primitive value.
+
+        int n = Integer.parseInt("100");
+        double d = Double.parseDouble("12.5");
+        System.out.println(n);
+        System.out.println(d);
+
+
+        //3. toString() : Converts value to String.
+        Integer num1 = 5;
+        Integer num2 = 10;
+
+        String s = num1.toString(5) + num1.toString(10);
+        System.out.println(s);
+
+        // 4. compare() : Compares 2 value
+        System.out.println(Integer.compare(10, 20));
+
     }
 }
+
+ */
+
+// Command Line Arguments
+
+// 1. Print : "Hello"
+/*public class OopsProblems {
+    public static void main(String[] args) {
+
+        System.out.println(args[0]);
+    }
+}
+ */
+
+
+// 2. Print : All values entered by user.
+/*public class OopsProblems {
+    public static void main(String[] args) {
+        for(int i = 0; i<args.length ; i++) {
+
+            System.out.println(args[i]);
+        }
+    }
+}
+ */
+
+
+// 3. Print : Sum of given no's
+
+/*public class OopsProblems {
+    public static void main(String[] args) {
+        int sum = 0;
+        for(int i = 0; i<args.length ; i++) {
+            sum = sum + Integer.parseInt(args[i]);
+
+            System.out.println(sum);
+        }
+    }
+}
+ */
+
+// Encapsulation
+
+/*public class OopsProblems {
+
+    private String name; // private = restricted access
+
+    // Getter
+    public String getName() {
+        return name;
+    }
+
+    // Setter
+    public void setName(String newName) {
+        this.name = newName;
+    }
+}
+ */
+
+// Inheritance :
+
+//In the example below, the Car class (subclass) inherits the attributes and methods from the Vehicle class (superclass):
+
+/* public class OopsProblems {
+        protected String brand = "Ford";        // Vehicle attribute
+        public void myMethod() {                    // Vehicle method
+            System.out.println("Tuut, tuut!");
+        }
+    }
+
+    class Car extends OopsProblems {
+        private String modelName = "Mustang";    // Car attribute
+        public static void main(String[] args) {
+
+            Car myCar = new Car();  // Create a myCar object
+
+            myCar.myMethod();  // Call the myMethod() method (from the Vehicle class) on the myCar object
+
+
+            // Display the value of the brand attribute (from the Vehicle class) and the value of the modelName from the Car class
+            System.out.println(myCar.brand + " " + myCar.modelName);
+    }
+}
+ */
+
+// Initialization Block :
+
+public class OopsProblems{
+    protected int x;
+
+    {
+        System.out.println("Initialization Block : =" + x);
+        x = 5;
+    }
+
+    public OopsProblems(){
+        System.out.println("Constructor : x =" + x);
+    }
+
+    public static void main(String[]args){}
+
+    OopsProblems t1 = new OopsProblems();
+}
+
